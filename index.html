@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23020b04'/><text y='.9em' font-size='55' font-family='monospace' fill='%2300ff41' font-weight='bold' x='8'>404</text></svg>">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="$404 — El primer meme coin construido sobre honestidad radical. Sin utilidad prometida. Sin rug posible. Solana.">
@@ -11,6 +10,10 @@
 <meta property="og:url" content="https://thewired404.github.io">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://thewired404.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://thewired404.github.io/og-image.png">
 <meta name="twitter:site" content="@TheWhired404">
 <title>$404 — Utility Not Found</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,8 +40,9 @@ body{
   font-family:var(--body);font-size:15px;
   line-height:2;overflow-x:hidden;cursor:crosshair;
 }
-a{color:inherit;text-decoration:none}
+a{color:inherit;text-decoration:none;cursor:pointer}
 button{cursor:pointer;font-family:var(--body)}
+.btn,.comm-link,.footer-links a,.nav-links a{cursor:pointer}
 img{max-width:100%;display:block}
 
 /* ── BACKGROUND ── */
@@ -256,7 +260,7 @@ section{padding:96px 0;border-top:1px solid var(--br);position:relative;z-index:
   text-align:center;margin-top:10px;letter-spacing:1px;line-height:1.8;
 }
 .sc-divider{height:1px;background:var(--br);margin:18px 0}
-.sc-checks{font-family:var(--mono);font-size:10px;color:#8aad90;line-height:2.1}
+.sc-checks{font-family:var(--mono);font-size:9px;color:#5a8a62;line-height:1.9;padding-top:2px}
 .sc-checks .ok{color:var(--g)}
 .sc-checks .soon{color:var(--am)}
 .sc-checks .no{color:var(--rd)}
@@ -315,14 +319,16 @@ section{padding:96px 0;border-top:1px solid var(--br);position:relative;z-index:
 
 /* ── PROTOCOL CARDS ── */
 .proto-grid{display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1px;background:var(--br);margin:32px 0}
+  gap:1px;background:var(--br);margin:32px 0;align-items:stretch}
 .proto{background:var(--bg2);padding:24px;
-  border-top:2px solid transparent;transition:all .2s}
+  border-top:2px solid transparent;transition:all .2s;
+  display:flex;flex-direction:column;}
 .proto:hover{border-top-color:var(--g);background:#081408}
 .proto-icon{font-family:var(--mono);font-size:8px;color:var(--g);
   letter-spacing:2px;margin-bottom:9px}
 .proto-t{font-size:12px;font-weight:700;color:var(--w);margin-bottom:6px}
 .proto-b{font-size:12px;color:#8aad90;line-height:2}
+.proto .badge{margin-top:auto;}
 .badge{
   display:inline-block;font-size:7px;letter-spacing:1.5px;
   text-transform:uppercase;padding:3px 8px;margin-top:9px;
@@ -355,7 +361,8 @@ section{padding:96px 0;border-top:1px solid var(--br);position:relative;z-index:
 .sv-seg.curve{background:var(--g)}
 .sv-seg.burn{background:var(--rd)}
 .sv-seg.dev{background:var(--am)}
-.sv-legend{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sv-seg.drop{background:var(--bl)}
+.sv-legend{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .sv-item{background:var(--bg2);border:1px solid var(--br);padding:18px}
 .sv-item-dot{
   width:8px;height:8px;border-radius:50%;
@@ -384,7 +391,7 @@ section{padding:96px 0;border-top:1px solid var(--br);position:relative;z-index:
 .ms-grid{display:grid;gap:2px}
 .ms-row{
   display:grid;
-  grid-template-columns:200px 130px 1fr auto;
+  grid-template-columns:minmax(120px,200px) minmax(100px,130px) 1fr auto;
   gap:0;background:var(--br);
 }
 .ms-row > div{
@@ -620,7 +627,7 @@ footer{
   .hero{padding:44px 18px 60px}
   .tok-grid{grid-template-columns:repeat(2,1fr)}
   .tc:last-child{grid-column:1/-1}
-  .sv-legend{grid-template-columns:1fr}
+  .sv-legend{grid-template-columns:repeat(2,1fr)}
   .ms-row{grid-template-columns:1fr}
   .drop-grid,.comm-grid,.g4,.proto-grid,.g2{grid-template-columns:1fr}
   .cb-features{grid-template-columns:1fr}
@@ -650,7 +657,8 @@ footer{
     <span class="ti">TAX: 0% / 0%</span><span class="ts">///</span>
     <span class="ti">MINT REVOCADA</span><span class="ts">///</span>
     <span class="ti">LP AUTO-QUEMADO</span><span class="ts">///</span>
-    <span class="ti">100M TOKENS QUEMADOS</span><span class="ts">///</span>
+    <span class="ti">75M TOKENS QUEMADOS</span><span class="ts">///</span>
+    <span class="ti">10% RESERVA AIRDROPS</span><span class="ts">///</span>
     <span class="ti">THE LOST REQUESTS</span><span class="ts">///</span>
     <span class="ti">PRE-LAUNCH</span><span class="ts">///</span>
     <span class="ti">$404</span><span class="ts">///</span>
@@ -660,7 +668,8 @@ footer{
     <span class="ti">TAX: 0% / 0%</span><span class="ts">///</span>
     <span class="ti">MINT REVOCADA</span><span class="ts">///</span>
     <span class="ti">LP AUTO-QUEMADO</span><span class="ts">///</span>
-    <span class="ti">100M TOKENS QUEMADOS</span><span class="ts">///</span>
+    <span class="ti">75M TOKENS QUEMADOS</span><span class="ts">///</span>
+    <span class="ti">10% RESERVA AIRDROPS</span><span class="ts">///</span>
     <span class="ti">THE LOST REQUESTS</span><span class="ts">///</span>
     <span class="ti">PRE-LAUNCH</span><span class="ts">///</span>
   </div>
@@ -673,6 +682,7 @@ footer{
     <ul class="nav-links">
       <li><a href="#about">Proyecto</a></li>
       <li><a href="#tokenomics">Tokenomics</a></li>
+      <li><a href="#protocol">Protocolo</a></li>
       <li><a href="#milestones">Milestones</a></li>
       <li><a href="#recon">RECON</a></li>
       <li><a href="#roadmap">Roadmap</a></li>
@@ -709,7 +719,7 @@ footer{
       <a href="https://t.me/fourofour_community" target="_blank" rel="noopener" class="btn btn-primary">
         Unirse ahora →
       </a>
-      <a href="#tokenomics" class="btn btn-ghost">Ver tokenomics ↓</a>
+      <a href="#about" class="btn btn-ghost">¿Qué es $404? ↓</a>
     </div>
   </div>
 
@@ -749,7 +759,8 @@ footer{
     <div class="sc-checks">
       <div><span class="ok">✓</span> Mint authority revocada al deploy</div>
       <div><span class="ok">✓</span> LP auto-quemado al graduarse en pump.fun</div>
-      <div><span class="ok">✓</span> 100M tokens quemados por el founder</div>
+      <div><span class="ok">✓</span> 75M tokens quemados al deploy</div>
+      <div><span class="ok">✓</span> 100M reserva airdrops — wallet pública</div>
       <div><span class="ok">✓</span> Sin tax de compra ni venta</div>
       <div><span class="soon">◎</span> Contrato en Solscan — al deploy</div>
       <div><span class="soon">◎</span> RugCheck — disponible al deploy</div>
@@ -855,8 +866,8 @@ footer{
       </div>
       <div class="tc">
         <div class="tc-l">Tokens quemados</div>
-        <div class="tc-v">100M</div>
-        <div class="tc-n">El founder quema el 50% de su asignación al deploy. Verificable on-chain.</div>
+        <div class="tc-v">75M</div>
+        <div class="tc-n">Quemados al deploy. Verificable on-chain en Solscan.</div>
       </div>
     </div>
 
@@ -864,31 +875,39 @@ footer{
     <div class="supply-visual reveal">
       <div class="sv-title">// Distribución del supply</div>
       <div class="sv-bar">
-        <div class="sv-seg curve" style="width:80%"></div>
-        <div class="sv-seg dev" style="width:10%"></div>
-        <div class="sv-seg burn" style="width:10%"></div>
+        <div class="sv-seg curve" style="width:75%"></div>
+        <div class="sv-seg dev" style="width:7.5%"></div>
+        <div class="sv-seg drop" style="width:10%"></div>
+        <div class="sv-seg burn" style="width:7.5%"></div>
       </div>
       <div class="sv-legend">
         <div class="sv-item">
           <div class="sv-item-dot" style="background:var(--g)"></div>
-          <div class="sv-item-pct" style="color:var(--g)">80%</div>
+          <div class="sv-item-pct" style="color:var(--g)">75%</div>
           <div class="sv-item-name">Bonding Curve</div>
-          <div class="sv-item-n">800,000,000 tokens disponibles para compra pública desde el primer bloque. Nadie tiene precio preferencial.</div>
-          <div class="sv-item-tokens">800,000,000 $404</div>
+          <div class="sv-item-n">750,000,000 tokens para compra pública desde el primer bloque. Sin precio preferencial para nadie.</div>
+          <div class="sv-item-tokens">750,000,000 $404</div>
         </div>
         <div class="sv-item">
           <div class="sv-item-dot" style="background:var(--am)"></div>
-          <div class="sv-item-pct" style="color:var(--am)">10%</div>
-          <div class="sv-item-name">Fondo de desarrollo</div>
-          <div class="sv-item-n">100,000,000 tokens del founder. Wallet pública declarada. Destinados a financiar el desarrollo de $404 RECON y operaciones.</div>
-          <div class="sv-item-tokens">100,000,000 $404 · <a id="dev-wallet-link" href="#" style="color:var(--am);border-bottom:1px solid rgba(255,179,0,.3)">wallet pública →</a></div>
+          <div class="sv-item-pct" style="color:var(--am)">7.5%</div>
+          <div class="sv-item-name">Fondo desarrollo</div>
+          <div class="sv-item-n">75,000,000 tokens del founder. Wallet declarada públicamente. Financian el desarrollo de $404 RECON.</div>
+          <div class="sv-item-tokens">75,000,000 $404 · <span id="dev-wallet-link" style="color:var(--am);font-family:var(--mono);font-size:9px;opacity:.6">wallet pública — al deploy</span></div>
+        </div>
+        <div class="sv-item">
+          <div class="sv-item-dot" style="background:var(--bl)"></div>
+          <div class="sv-item-pct" style="color:var(--bl)">10%</div>
+          <div class="sv-item-name">Reserva airdrops</div>
+          <div class="sv-item-n">100,000,000 tokens en wallet pública declarada. Uso exclusivo: distribución a comunidad según milestones.</div>
+          <div class="sv-item-tokens">100,000,000 $404 · <span id="airdrop-wallet-link" style="color:var(--bl);font-family:var(--mono);font-size:9px;opacity:.6">wallet pública — al deploy</span></div>
         </div>
         <div class="sv-item">
           <div class="sv-item-dot" style="background:var(--rd)"></div>
-          <div class="sv-item-pct" style="color:var(--rd)">10%</div>
+          <div class="sv-item-pct" style="color:var(--rd)">7.5%</div>
           <div class="sv-item-name">Quemados</div>
-          <div class="sv-item-n">100,000,000 tokens quemados por el founder al deploy. Supply efectivo circulante: 900M. Verificable en Solscan.</div>
-          <div class="sv-item-tokens">100,000,000 $404 → 🔥 burn address</div>
+          <div class="sv-item-n">75,000,000 tokens quemados por el founder al deploy. Supply circulante efectivo: 925M. Verificable en Solscan.</div>
+          <div class="sv-item-tokens">75,000,000 $404 → 🔥 burn address</div>
         </div>
       </div>
     </div>
@@ -899,12 +918,113 @@ footer{
       <span class="tmu">No hay distribución manual, no hay wallets privilegiadas, no hay preventa.</span><br>
       <span class="tmu">El LP se crea y quema automáticamente al graduarse (~$69k market cap).</span><br><br>
       <span class="tok">✓</span> <span class="tmu">Sin rug post-graduación — el mecanismo lo garantiza, no la palabra del dev.</span><br>
-      <span class="tok">✓</span> <span class="tmu">100M quemados por el founder = supply efectivo 900M desde el día 1.</span><br>
+      <span class="tok">✓</span> <span class="tmu">75M quemados al deploy + 100M reserva airdrops declarada = transparencia total.</span><br>
       <span class="te">✗</span> <span class="tmu">No hay cliff ni vesting — el fondo de desarrollo es visible, no bloqueado.</span>
     </div>
 
-    <div class="disc">
+    <div class="disc disc-amber">
       <strong>Transparencia del founder:</strong> La versión anterior de este sitio describía una distribución de wallets personalizada (60% LP, 20% comunidad, etc.) que técnicamente no es posible con pump.fun. Ese texto fue incorrecto y ha sido corregido. La honestidad radical incluye corregir los propios errores públicamente. // <em>Previous version incorrectly described custom wallet distribution — corrected here.</em>
+    </div>
+  </div>
+</section>
+
+<!-- PROTOCOL -->
+<section id="protocol">
+  <div class="wrap reveal">
+    <div class="sec-label">0x03 // Protocolo</div>
+    <h2 class="sec-h">Lo que <em>podría existir</em><br>algún día.</h2>
+    <div class="body-txt">
+      <p>Esta sección es <strong>especulativa</strong>. La etiquetamos así porque otros proyectos escriben lo especulativo como si fuera un hecho. La diferencia entre "estamos explorando" y "lanzamos en Q3" es exactamente la diferencia entre nosotros y el 95% del mercado.</p>
+    </div>
+
+    <div class="proto-grid reveal">
+      <div class="proto">
+        <div class="proto-icon">[ STAKING ]</div>
+        <div class="proto-t">Holding como señal</div>
+        <div class="proto-b">Bloquear $404 por periodos definidos podría generar recompensas del fondo comunitario. Sin APY inventado.</div>
+        <span class="badge spec">Especulativo</span>
+      </div>
+      <div class="proto">
+        <div class="proto-icon">[ GOVERNANCE ]</div>
+        <div class="proto-t">Gobernanza real</div>
+        <div class="proto-b">La wallet de marketing bajo control de holders vía votación en snapshot. Sin gasto sin mayoría. Activa con comunidad suficiente.</div>
+        <span class="badge spec">Explorando</span>
+      </div>
+      <div class="proto">
+        <div class="proto-icon">[ BURN EVENTS ]</div>
+        <div class="proto-t">Burns comunitarios</div>
+        <div class="proto-b">En cada milestone, la comunidad vota quemar una porción del fondo. El supply cae. La comunidad decide, no el team.</div>
+        <span class="badge spec">Explorando</span>
+      </div>
+      <div class="proto">
+        <div class="proto-icon">[ FEE TOKEN ]</div>
+        <div class="proto-t">Token de acceso</div>
+        <div class="proto-b">$404 como acceso preferencial a RECON y futuras herramientas del ecosistema. Ventaja económica — no obligación.</div>
+        <span class="badge">En diseño</span>
+      </div>
+      <div class="proto">
+        <div class="proto-icon">[ ECOSYSTEM ]</div>
+        <div class="proto-t">Lo que construyas</div>
+        <div class="proto-b">Fondo de grants para proyectos comunitarios que integren $404. El meme como capital semilla para lo que la comunidad decida crear.</div>
+        <span class="badge spec">Especulativo</span>
+      </div>
+      <div class="proto" style="border-top-color:rgba(77,166,255,.35)">
+        <div class="proto-icon" style="color:rgba(77,166,255,.7)">[ $404 RECON ]</div>
+        <div class="proto-t">Inteligencia de mercado</div>
+        <div class="proto-b">El producto principal del ecosistema $404. Análisis de riesgo on-chain para memecoins en Solana. Se activa al milestone $500K.</div>
+        <a href="#recon" style="display:inline-block;margin-top:auto;padding-top:12px;font-family:var(--mono);font-size:9px;color:rgba(77,166,255,.7);letter-spacing:1px;border-bottom:1px solid rgba(77,166,255,.3);">Ver sección completa →</a>
+      </div>
+    </div>
+
+    <div class="term reveal" data-lbl="verificado">
+      <span class="tok">✓</span> Contrato — sin mecanismos ocultos<br>
+      <span class="tok">✓</span> LP auto-quemado — pump.fun lo garantiza, no nuestra palabra<br>
+      <span class="tok">✓</span> 75M tokens quemados al deploy — verificable on-chain<br>
+      <span class="tmu">◎</span> Staking — bajo investigación técnica<br>
+      <span class="te">✗</span> Precio garantizado, APY o utilidad comprometida — <span class="te">NUNCA</span>
+    </div>
+  </div>
+</section>
+
+<!-- RECON -->
+<section id="recon">
+  <div class="wrap reveal">
+    <div class="sec-label">0x04 // $404 RECON</div>
+    <h2 class="sec-h">La <em>inteligencia</em> que<br>el mercado nunca tuvo.</h2>
+    <div class="body-txt">
+      <p>Si $404 alcanza tracción real, construimos algo que no existe en ningún lado: un sistema de análisis de riesgo para memecoins en Solana que habla con la persona detrás de la wallet — no solo con sus datos. Se activa al alcanzar el milestone de <strong>$500K market cap.</strong></p>
+    </div>
+
+    <div class="recon-box reveal">
+      <div class="cb-label">◈ Se activa al milestone $500K · Especulativo · Sujeto al crecimiento de la comunidad</div>
+      <div class="cb-title">$404 <span>RECON</span></div>
+      <div class="cb-body">
+        Pegas un contrato o wallet. En 15 segundos recibes lo que antes hacías manualmente en 20 minutos: análisis del contrato on-chain, comportamiento de wallets, señales de riesgo, comparación con patrones históricos de rugs documentados. <strong>En lenguaje humano. Sin jerga técnica innecesaria.</strong>
+        <br><br>
+        No es ChatGPT con contexto de crypto. Es un sistema con datos en tiempo real de Solana, memoria histórica acumulada, y alertas que te avisan cuando algo cambia — aunque sean las 3am y no estés mirando.
+      </div>
+      <div class="cb-features">
+        <div class="cbf">Análisis de contrato on-chain en tiempo real</div>
+        <div class="cbf">Alertas automáticas: CRITICAL / HIGH / WATCH</div>
+        <div class="cbf">Historical Archive: rugs documentados públicamente</div>
+        <div class="cbf">Wallet profiling y Rug Proximity Score</div>
+        <div class="cbf">Launch Radar: nuevos tokens filtrados por relevancia</div>
+        <div class="cbf">$404 holders: acceso con ventajas económicas reales</div>
+      </div>
+      <div class="cb-footer">
+        // Los holders de $404 tendrán acceso preferencial cuando el producto esté live.<br>
+        // El token no es obligatorio para usar RECON — es la ventaja de quienes confían antes.<br>
+        // Cada análisis alimenta el dataset histórico del mercado. El moat crece con cada uso.
+      </div>
+    </div>
+
+    <div class="manifesto reveal" style="border-top-color:rgba(77,166,255,.35)">
+      <div class="mq" style="color:var(--w)">
+        "Nadie le explica al retail que los datos ya estaban ahí.<br>
+        Que el rug ya era visible <em>antes</em> de entrar.<br>
+        RECON lo hace. Eso es todo."
+      </div>
+      <div class="mattr">— $404 RECON · En diseño · Se activa al milestone $500K</div>
     </div>
   </div>
 </section>
@@ -912,7 +1032,7 @@ footer{
 <!-- MILESTONES -->
 <section id="milestones">
   <div class="wrap reveal">
-    <div class="sec-label">0x03 // Milestones de comunidad</div>
+    <div class="sec-label">0x05 // Milestones de comunidad</div>
     <h2 class="sec-h">El camino está <em>trazado.</em><br>La comunidad lo recorre.</h2>
 
     <div class="milestones">
@@ -1057,107 +1177,6 @@ footer{
   </div>
 </section>
 
-<!-- RECON -->
-<section id="recon">
-  <div class="wrap reveal">
-    <div class="sec-label">0x04 // $404 RECON</div>
-    <h2 class="sec-h">La <em>inteligencia</em> que<br>el mercado nunca tuvo.</h2>
-    <div class="body-txt">
-      <p>Si $404 alcanza tracción real, construimos algo que no existe en ningún lado: un sistema de análisis de riesgo para memecoins en Solana que habla con la persona detrás de la wallet — no solo con sus datos. Se activa al alcanzar el milestone de <strong>$500K market cap.</strong></p>
-    </div>
-
-    <div class="recon-box reveal">
-      <div class="cb-label">◈ Se activa al milestone $500K · Especulativo · Sujeto al crecimiento de la comunidad</div>
-      <div class="cb-title">$404 <span>RECON</span></div>
-      <div class="cb-body">
-        Pegas un contrato o wallet. En 15 segundos recibes lo que antes hacías manualmente en 20 minutos: análisis del contrato on-chain, comportamiento de wallets, señales de riesgo, comparación con patrones históricos de rugs documentados. <strong>En lenguaje humano. Sin jerga técnica innecesaria.</strong>
-        <br><br>
-        No es ChatGPT con contexto de crypto. Es un sistema con datos en tiempo real de Solana, memoria histórica acumulada, y alertas que te avisan cuando algo cambia — aunque sean las 3am y no estés mirando.
-      </div>
-      <div class="cb-features">
-        <div class="cbf">Análisis de contrato on-chain en tiempo real</div>
-        <div class="cbf">Alertas automáticas: CRITICAL / HIGH / WATCH</div>
-        <div class="cbf">Historical Archive: rugs documentados públicamente</div>
-        <div class="cbf">Wallet profiling y Rug Proximity Score</div>
-        <div class="cbf">Launch Radar: nuevos tokens filtrados por relevancia</div>
-        <div class="cbf">$404 holders: acceso con ventajas económicas reales</div>
-      </div>
-      <div class="cb-footer">
-        // Los holders de $404 tendrán acceso preferencial cuando el producto esté live.<br>
-        // El token no es obligatorio para usar RECON — es la ventaja de quienes confían antes.<br>
-        // Cada análisis alimenta el dataset histórico del mercado. El moat crece con cada uso.
-      </div>
-    </div>
-
-    <div class="manifesto reveal" style="border-top-color:rgba(77,166,255,.35)">
-      <div class="mq" style="color:var(--w)">
-        "Nadie le explica al retail que los datos ya estaban ahí.<br>
-        Que el rug ya era visible <em>antes</em> de entrar.<br>
-        RECON lo hace. Eso es todo."
-      </div>
-      <div class="mattr">— $404 RECON · En diseño · Se activa al milestone $500K</div>
-    </div>
-  </div>
-</section>
-
-<!-- PROTOCOL -->
-<section id="protocol">
-  <div class="wrap reveal">
-    <div class="sec-label">0x05 // Protocolo</div>
-    <h2 class="sec-h">Lo que <em>podría existir</em><br>algún día.</h2>
-    <div class="body-txt">
-      <p>Esta sección es <strong>especulativa</strong>. La etiquetamos así porque otros proyectos escriben lo especulativo como si fuera un hecho. La diferencia entre "estamos explorando" y "lanzamos en Q3" es exactamente la diferencia entre nosotros y el 95% del mercado.</p>
-    </div>
-
-    <div class="proto-grid reveal">
-      <div class="proto">
-        <div class="proto-icon">[ STAKING ]</div>
-        <div class="proto-t">Holding como señal</div>
-        <div class="proto-b">Bloquear $404 por periodos definidos podría generar recompensas del fondo comunitario. Sin APY inventado.</div>
-        <span class="badge spec">Especulativo</span>
-      </div>
-      <div class="proto">
-        <div class="proto-icon">[ GOVERNANCE ]</div>
-        <div class="proto-t">Gobernanza real</div>
-        <div class="proto-b">La wallet de marketing bajo control de holders vía votación en snapshot. Sin gasto sin mayoría. Activa con comunidad suficiente.</div>
-        <span class="badge spec">Explorando</span>
-      </div>
-      <div class="proto">
-        <div class="proto-icon">[ BURN EVENTS ]</div>
-        <div class="proto-t">Burns comunitarios</div>
-        <div class="proto-b">En cada milestone, la comunidad vota quemar una porción del fondo. El supply cae. La comunidad decide, no el team.</div>
-        <span class="badge spec">Explorando</span>
-      </div>
-      <div class="proto">
-        <div class="proto-icon">[ FEE TOKEN ]</div>
-        <div class="proto-t">Token de acceso</div>
-        <div class="proto-b">$404 como acceso preferencial a RECON y futuras herramientas del ecosistema. Ventaja económica — no obligación.</div>
-        <span class="badge">En diseño</span>
-      </div>
-      <div class="proto">
-        <div class="proto-icon">[ ECOSYSTEM ]</div>
-        <div class="proto-t">Lo que construyas</div>
-        <div class="proto-b">Fondo de grants para proyectos comunitarios que integren $404. El meme como capital semilla para lo que la comunidad decida crear.</div>
-        <span class="badge spec">Especulativo</span>
-      </div>
-      <div class="proto" style="border-top-color:rgba(77,166,255,.35)">
-        <div class="proto-icon" style="color:rgba(77,166,255,.7)">[ $404 RECON ]</div>
-        <div class="proto-t">Inteligencia de mercado</div>
-        <div class="proto-b">Sistema de análisis de riesgo on-chain para memecoins. El producto que justifica todo lo demás. Milestone: $500K market cap.</div>
-        <span class="badge dev">En diseño</span>
-      </div>
-    </div>
-
-    <div class="term reveal" data-lbl="verificado">
-      <span class="tok">✓</span> Contrato — sin mecanismos ocultos<br>
-      <span class="tok">✓</span> LP auto-quemado — pump.fun lo garantiza, no nuestra palabra<br>
-      <span class="tok">✓</span> 100M tokens quemados por el founder al deploy<br>
-      <span class="tmu">◎</span> Staking — bajo investigación técnica<br>
-      <span class="te">✗</span> Precio garantizado, APY o utilidad comprometida — <span class="te">NUNCA</span>
-    </div>
-  </div>
-</section>
-
 <!-- ROADMAP -->
 <section id="roadmap">
   <div class="wrap reveal">
@@ -1170,7 +1189,7 @@ footer{
     <div class="roadmap reveal">
       <div class="ph live">
         <div class="ph-tag">// FASE 0 — ERROR GENESIS — ACTIVO AHORA</div>
-        <div class="ph-title">Deploying the meme</div>
+        <div class="ph-title">El deploy del meme</div>
         <ul class="ph-items">
           <li>Narrativa, whitepaper y website publicados</li>
           <li>Cuentas oficiales en X y Telegram activas</li>
@@ -1181,10 +1200,10 @@ footer{
 
       <div class="ph soon">
         <div class="ph-tag">// FASE 1 — LAUNCH EN PUMP.FUN</div>
-        <div class="ph-title">The token goes live</div>
+        <div class="ph-title">El token sale en vivo</div>
         <ul class="ph-items">
           <li>Deploy del contrato en Solana mainnet via pump.fun</li>
-          <li>100M tokens quemados por el founder al deploy</li>
+          <li>75M tokens quemados al deploy — verificable on-chain</li>
           <li>Anuncio en todos los canales con dirección de contrato verificada</li>
           <li>Primer airdrop para early holders al milestone $50K</li>
           <li>Aplicación a CoinGecko y CoinMarketCap</li>
@@ -1193,7 +1212,7 @@ footer{
 
       <div class="ph soon">
         <div class="ph-tag">// FASE 2 — MILESTONE: $150K — COMUNIDAD REAL</div>
-        <div class="ph-title">The community organizes</div>
+        <div class="ph-title">La comunidad se organiza</div>
         <ul class="ph-items">
           <li>Fondo de desarrollo activo — primeros gastos en RECON declarados</li>
           <li>Canal privado de análisis para holders verificados</li>
@@ -1204,7 +1223,7 @@ footer{
 
       <div class="ph recon">
         <div class="ph-tag">// FASE 3 — MILESTONE: $500K — RECON NACE</div>
-        <div class="ph-title">The intelligence layer</div>
+        <div class="ph-title">La capa de inteligencia</div>
         <ul class="ph-items">
           <li>$404 RECON MVP — análisis de contratos on-chain en vivo</li>
           <li>Historical Archive público — rugs documentados con señales previas</li>
@@ -1216,7 +1235,7 @@ footer{
 
       <div class="ph later">
         <div class="ph-tag">// FASE 4 — MILESTONE: $2M+ — ECOSISTEMA COMPLETO</div>
-        <div class="ph-title">Memory of the market</div>
+        <div class="ph-title">La memoria del mercado</div>
         <ul class="ph-items">
           <li>RECON completo: wallet profiling, Launch Radar, API pública</li>
           <li>$404 como token de acceso y ventaja en el ecosistema</li>
@@ -1242,8 +1261,8 @@ footer{
       <div class="drop">
         <div class="drop-ms">Early</div>
         <div class="drop-unit">Holders — Airdrop 0</div>
-        <div class="drop-rw">↳ 500,000 $404 / wallet</div>
-        <div class="drop-rules">Primeros holders al launch. Snapshot sin aviso previo. Se activa al milestone $50K.</div>
+        <div class="drop-rw">↳ 100,000 $404 / wallet</div>
+        <div class="drop-rules">Primeros holders al launch. Snapshot sin aviso previo. Se activa al milestone $50K. Sale de la reserva declarada de airdrops.</div>
       </div>
       <div class="drop">
         <div class="drop-ms">1K</div>
@@ -1255,7 +1274,7 @@ footer{
         <div class="drop-ms">5K</div>
         <div class="drop-unit">Miembros Telegram</div>
         <div class="drop-rw">↳ 50M $404 entre holders</div>
-        <div class="drop-rules">Requiere mínimo 100,000 $404 al snapshot. Fecha sin aviso previo. Proporcional al hold.</div>
+        <div class="drop-rules">Requiere mínimo $5 USD en $404 al snapshot. Fecha sin aviso previo. Proporcional al hold.</div>
       </div>
       <div class="drop">
         <div class="drop-ms">$500K</div>
@@ -1342,9 +1361,9 @@ footer{
     <div>
       <div class="footer-col-title">Documentos</div>
       <ul class="footer-links">
-        <li><a id="contract-link-footer" href="#">Contrato Solscan — coming soon</a></li>
-        <li><a id="rugcheck-link-footer" href="#">RugCheck — coming soon</a></li>
-        <li><a href="#tokenomics">Whitepaper (este sitio)</a></li>
+        <li><span id="contract-link-footer" style="font-size:12px;color:#4a6a50">Contrato Solscan — al deploy</span></li>
+        <li><span id="rugcheck-link-footer" style="font-size:12px;color:#4a6a50">RugCheck — al deploy</span></li>
+        <li><a href="404-whitepaper-v3.pdf" target="_blank" rel="noopener">Whitepaper v3.0 (PDF)</a></li>
         <li><a href="#recon">$404 RECON — en diseño</a></li>
         <li><a href="#milestones">Milestones y metas</a></li>
       </ul>
@@ -1401,25 +1420,49 @@ if (supplyVisual) barIo.observe(supplyVisual);
 /* Actualizar estos valores cuando se haga deploy del token */
 const CONTRACT  = ''; /* URL completa de Solscan, ej: https://solscan.io/token/XXXXXXX */
 const RUGCHECK  = ''; /* URL de RugCheck, ej: https://rugcheck.xyz/tokens/XXXXXXX */
-const DEV_WALLET = ''; /* Dirección de la wallet del founder para el fondo de desarrollo */
+const DEV_WALLET    = ''; /* Wallet fondo de desarrollo del founder — agregar al deploy */
+const DROP_WALLET   = ''; /* Wallet reserva de airdrops — agregar al deploy */
 
 if (CONTRACT) {
-  ['contract-link-footer'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) { el.href = CONTRACT; el.textContent = 'Contrato en Solscan'; }
-  });
+  const el = document.getElementById('contract-link-footer');
+  if (el) {
+    const a = document.createElement('a');
+    a.href = CONTRACT; a.textContent = 'Contrato en Solscan';
+    a.target = '_blank'; a.rel = 'noopener';
+    a.style.cssText = 'font-size:12px;color:#7aaa82;transition:color .18s';
+    el.replaceWith(a);
+  }
 }
 if (RUGCHECK) {
-  ['rugcheck-link-footer'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) { el.href = RUGCHECK; el.textContent = 'RugCheck verificado'; }
-  });
+  const el = document.getElementById('rugcheck-link-footer');
+  if (el) {
+    const a = document.createElement('a');
+    a.href = RUGCHECK; a.textContent = 'RugCheck verificado';
+    a.target = '_blank'; a.rel = 'noopener';
+    a.style.cssText = 'font-size:12px;color:#7aaa82;transition:color .18s';
+    el.replaceWith(a);
+  }
 }
 if (DEV_WALLET) {
   const wl = document.getElementById('dev-wallet-link');
   if (wl) {
-    wl.href = 'https://solscan.io/account/' + DEV_WALLET;
-    wl.textContent = DEV_WALLET.slice(0,6) + '...' + DEV_WALLET.slice(-4) + ' →';
+    const a = document.createElement('a');
+    a.href = 'https://solscan.io/account/' + DEV_WALLET;
+    a.textContent = DEV_WALLET.slice(0,6) + '...' + DEV_WALLET.slice(-4) + ' →';
+    a.target = '_blank'; a.rel = 'noopener';
+    a.style.cssText = 'color:var(--am);font-family:var(--mono);font-size:9px;border-bottom:1px solid rgba(255,179,0,.3)';
+    wl.replaceWith(a);
+  }
+}
+if (DROP_WALLET) {
+  const dl = document.getElementById('airdrop-wallet-link');
+  if (dl) {
+    const a = document.createElement('a');
+    a.href = 'https://solscan.io/account/' + DROP_WALLET;
+    a.textContent = DROP_WALLET.slice(0,6) + '...' + DROP_WALLET.slice(-4) + ' →';
+    a.target = '_blank'; a.rel = 'noopener';
+    a.style.cssText = 'color:var(--bl);font-family:var(--mono);font-size:9px;border-bottom:1px solid rgba(77,166,255,.3)';
+    dl.replaceWith(a);
   }
 }
 </script>
